@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <serction>
+
+    <header class="main">
+		    <h4>Bienvenido,</h4>
+    </header>
+
+	<p>Desde esta opción se pueden actualizar los links del Power BI para el BAU y Fenix</p>
+
+    <hr class="major" />
+        <form action="/update" method="POST">
+            <div class="col-12">
+        	    <select name="posPower" id="posPower">
+				    <option value="">- Elija Opción -</option>
+					<option value="1">Link Dashboard BAU</option>
+					<option value="2">Link Dashboard Fenix</option>
+                </select>
+            </div>
+            <p></p>
+            <h3>Ingrese URL</h3>
+            <div class="col-6 col-12-xsmall">
+			    <input type="text" name="urlPower" id="urlPower" value="" placeholder="URL Dashboard Power BI" />
+			</div>
+            <p></p>
+            <button type="submit" class="float-left submit-btn">Actualizar</button>
+            <div class="flex-sb-m w-full p-b-48">
+                {{ mensaje }}
+            </div>
+        </form>
+    </serction>
+
+
+
+
+
+
+{% endblock %}

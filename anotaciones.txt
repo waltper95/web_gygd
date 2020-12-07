@@ -1,0 +1,7 @@
+Para subir a Heroku:
+
+git status
+git add .
+git commit -m "texto"
+git push heroku master
+

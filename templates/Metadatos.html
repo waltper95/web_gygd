@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content">
+	    <b>Ingrese el término a consultar:</b>
+        <p></p>
+        <form action="/search_term" method="POST">
+            <input type="search" name="termino" id="input-search" placeholder="Término" />
+            <br>
+            <div align="right">
+                <button type="submit" class="float-left submit-btn">Buscar</button>
+            </div>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <div class="box">
+            <b>{{ message }}</b>
+            </div>
+
+        <p></p>
+        <table>
+            <thead>
+                <tr>
+                    <td><b>{{ 'Termino' }}</b></td>
+                    <td><b>{{ 'Definición' }}</b></td>
+                    <td><b>{{ 'Business Unit' }}</b></td>
+                </tr>
+            </thead>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+            <tbody>
+                {% for row in contacts  %}
+                    <tr>
+                        <td>{{ row.termino }}</td>
+                        <td>{{ row.definicion }}</td>
+                        <td>{{ row.campo1 }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+    </div>
+    <p></p>
+    <div align="right">
+
+    </div>
+
+{% endblock %}

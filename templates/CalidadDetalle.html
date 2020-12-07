@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <section>
+	    <header class="main">
+		    <h4>Bienvenido,</h4>
+        </header>
+
+		<p>Desde esta opción se pueden descargar los archivos en excel de detalle de los maestros que estamos trabajando en la calidad de los datos. Tener en cuenta: <b>Hay que estar conectado a la VPN</b></p>
+
+		<hr class="major" />
+
+        <p>
+            <form action="/maestrosDetalle" method="POST">
+                <h4>Seleccione el maestro que desea descargar:</h4>
+
+                <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-clientes" name="demo-clientes">
+				    <label for="demo-clientes">Clientes</label>
+			    </div>
+			    <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-proveedores" name="demo-proveedores">
+				    <label for="demo-proveedores">Proveedores</label>
+                </div>
+                <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-materiales" name="demo-materiales">
+				    <label for="demo-materiales">Materiales</label>
+                </div>
+                <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-listaMateriales" name="demo-listaMateriales">
+				    <label for="demo-listaMateriales">Lista de Materiales</label>
+                </div>
+                <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-recetas" name="demo-recetas">
+				    <label for="demo-recetas">Recetas</label>
+                </div>
+                <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-versFabricacion" name="demo-versFabricacion">
+				    <label for="demo-versFabricacion">Versión de Fabricación</label>
+                </div>
+                <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-PIR" name="demo-PIR">
+				    <label for="demo-PIR">PIR</label>
+                </div>
+                <div class="col-6 col-12-small">
+				    <input type="checkbox" id="demo-ActivoFijo" name="demo-ActivoFijo">
+				    <label for="demo-ActivoFijo">Activo Fijo</label>
+                </div>
+                <button type="submit" class="float-left submit-btn">Descargar Archivo</button>
+                <p></p>
+                <span>Status: </span>
+                <span>{{ status }}</span>
+            </form>
+        </p>
+
+
+	</section>
+
+{% endblock %}

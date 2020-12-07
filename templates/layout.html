@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gobierno de Datos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/main.css') }}" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168590093-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-168590093-1');
+    </script>
+
+
+
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<!-- Header -->
+								<header id="header">
+                                    <a href="{{ url_for('inicio') }}" class="logo"><strong style="font-size: 160%">Gestión y Gobierno de Datos</strong></a>
+								</header>
+							<!-- Banner -->
+								<section id="banner">
+									{% block content %}
+
+                                    {% endblock %}
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<div class="major">
+											<img src="{{ url_for('static',filename='Alicorp.png') }}" alt="Smiley face" align="right"  width="50%" height="50%">
+										</div>
+
+										<h2>Menu</h2>
+
+									</header>
+									<ul>
+										<li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+										<li>
+											<span class="opener">Form-Solicitudes <b>SAP R3</b></span>
+											<ul>
+												<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9UM0ZXVVNIQTRKVkc4SUg1UkxPRkRZR0c2Ui4u" target="_blank">Creación de Centros de Costo</a></li>
+												<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9UQjVFUU5UWUEwRkw0WjZFNFA3MDM5UjlZVS4u" target="_blank">Creación de Centros de Beneficio</a></li>
+												<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9URDRWNlNKTUpQUU01VDBLR0FWUFNTT0pEOS4u" target="_blank">Modificación de Centros de Costo</a></li>
+												<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9UQkw0SzNLSVYzVlQ1UEYzRVRKNlA3WldVWi4u" target="_blank">Modificación de Centros de Beneficio</a></li>
+											</ul>
+										</li>
+                                        <li>
+                                            <span class="opener">Form-Solicitudes <b>SAP S4 Hana</b></span>
+											<ul>
+												<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9UQVkyVkhDS1BHN0I4QVlRVkhUQzYzREQyNS4u" target="_blank">Creación de Centros de Costo</a></li>
+												<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9UQTRTRktFQjFETTFORTBDMlJOVFFaNkNIVi4u" target="_blank">Creación de Centros de Beneficio</a></li>
+												<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9UMkxSWkk3Vjc4NjIwMVNOUlBSMjJIQlJJMy4u" target="_blank">Modificación de Centros de Costo</a></li>
+												<li><a href=" https://forms.office.com/Pages/ResponsePage.aspx?id=QvsmVyaEd0WZZPE6Yq1eudfI4RNKoyRMsZ2ad1KQXJ9URUVGOEdNVzUyRVRYOUNXRzI0U0hCVVRTMi4u" target="_blank">Modificación de Centros de Beneficio</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Manuales <b>SAP R3</b></span>
+											<ul>
+												<li><a href="https://drive.google.com/open?id=1fNFU3HaMpg7ZKZctoxrmBe9PhkxkVRu1" target="_blank">Creación de Centros de Costo</a></li>
+												<li><a href="https://drive.google.com/file/d/1rxR18tKN4JmeW24F5eCN8TjAcEvuiGVC/view" target="_blank">Creación de Centros de Beneficio</a></li>
+												<li><a href="https://drive.google.com/open?id=1iEYX0MTmn2YW1J7U4kfmhBzQEBoWbKYr" target="_blank">Modificación de Centros de Costo</a></li>
+												<li><a href="https://drive.google.com/file/d/1dLy3ccSOT0hU4zOMyE4CjPMBU5ztKZ7j/view" target="_blank">Modificación de Centros de Beneficio</a></li>
+											</ul>
+										</li>
+                                        <li>
+											<span class="opener">Manuales <b>SAP S4</b></span>
+											<ul>
+												<li><a href="https://nam02.safelinks.protection.outlook.com/ap/b-59584e83/?url=https%3A%2F%2Fbposgromero.sharepoint.com%2F%3Ab%3A%2Ft%2FBackOffice%2FEXWBMdi73fxOuIP-8Te5rfMBqPA8GrzhtKiAxgvlkfQHBg%3Fe%3DTDxxTb&data=02%7C01%7CWPerezM%40alicorp.com.pe%7Cb3eb0675d85b4c8ce1ad08d86ad927f6%7C5726fb42842645779964f13a62ad5eb9%7C0%7C0%7C637376828194230821&sdata=MiQ35%2BrFHK7VsaI7jHZCre35uN1KpyOBBzCD8howj0w%3D&reserved=0" target="_blank">Creación de Centros de Costo</a></li>
+												<li><a href="https://nam02.safelinks.protection.outlook.com/ap/b-59584e83/?url=https%3A%2F%2Fbposgromero.sharepoint.com%2F%3Ab%3A%2Ft%2FBackOffice%2FEaFPBw4WvEJAkThomX8GFlkBkgn8ADKKH23QNg1Eh0eOtA%3Fe%3DmbtYhz&data=02%7C01%7CWPerezM%40alicorp.com.pe%7Cb3eb0675d85b4c8ce1ad08d86ad927f6%7C5726fb42842645779964f13a62ad5eb9%7C0%7C0%7C637376828194210829&sdata=zWbfn4%2FY1BbQPsxML86ek7Tf8w9qcHvoFODSswwtJFA%3D&reserved=0" target="_blank">Creación de Centros de Beneficio</a></li>
+												<li><a href="https://nam02.safelinks.protection.outlook.com/ap/b-59584e83/?url=https%3A%2F%2Fbposgromero.sharepoint.com%2F%3Ab%3A%2Ft%2FBackOffice%2FEVRnqG3roIBAhcDY8EUFTuIBHPuKMLTviflrUaqA5qE_6g%3Fe%3DFhmsRc&data=02%7C01%7CWPerezM%40alicorp.com.pe%7Cb3eb0675d85b4c8ce1ad08d86ad927f6%7C5726fb42842645779964f13a62ad5eb9%7C0%7C0%7C637376828194230821&sdata=0QmimVHcA2Kq%2FSG82McPumm04IuVtcFp9ezjgSS5KNw%3D&reserved=0" target="_blank">Modificación de Centros de Costo</a></li>
+												<li><a href="https://nam02.safelinks.protection.outlook.com/ap/b-59584e83/?url=https%3A%2F%2Fbposgromero.sharepoint.com%2F%3Ab%3A%2Ft%2FBackOffice%2FERhLuTKpJ3pPnmfbZHPa8MUBzuigyah-Abv8pbyn9GVozQ%3Fe%3DnPiI0E&data=02%7C01%7CWPerezM%40alicorp.com.pe%7Cb3eb0675d85b4c8ce1ad08d86ad927f6%7C5726fb42842645779964f13a62ad5eb9%7C0%7C0%7C637376828194220829&sdata=fnkUByILjc3RuDecKsPrVfqxHT9UpHSt%2Fg5%2BXEM9gIY%3D&reserved=0" target="_blank">Modificación de Centros de Beneficio</a></li>
+											</ul>
+										</li>
+
+
+                                        <!--
+                                        <li>
+                                                <span class="opener">Solicitudes</span>
+
+                                                <ul>
+                                                    <li>
+                                                        <span class="opener">Formularios</span>
+                                                        <ul>
+                                                            <li><a href="https://drive.google.com/open?id=1fNFU3HaMpg7ZKZctoxrmBe9PhkxkVRu1" target="_blank">Creación de Centros de Costo</a></li>
+                                                        </ul>
+                                                    </li>
+
+
+                                                    <li class="opener">Prueba3</li>
+                                                        <ul>Prueba</ul>
+                                                </ul>
+
+                                        </li>
+                                        -->
+										<li><a href="">Que es Gestión de Datos Maestros?</a></li>
+										<li><a href="{{ url_for('calidad') }}">Que es Calidad de Datos?</a></li>
+										<li><a href="{{ url_for('metadatos') }}">Que es Gestión de Metadatos?</a></li>
+										<li><a href="#">Que es Arquitectura de Datos?</a></li>
+										<li><a href="#">Noticias</a></li>
+										<li><a href="#">Preguntas Frecuentes</a></li>
+                                        <li><a href="{{ url_for('equipo') }}">Equipo GyGD</a></li>
+
+									</ul>
+								</nav>
+							<!-- Section -->
+								<section  class="alt">
+
+									<!--<form method="post" action="index.html">-->
+                                    <form action="/search_term" method="POST">
+										<div class ="Glosario">
+											<h2>Glosario de términos:</h2>
+										</div>
+										<br>
+										<input type="text" name="termino" id="query" placeholder="Término" />
+                                        <br>
+										<button type="submit" class="float-left submit-btn">Buscar</button>
+                                    </form>
+									<!--</form>-->
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contactanos!</h2>
+									</header>
+									<p>
+									Brindamos apoyo en temas relacionados a datos, si quisieras mantenerte en contacto con nosotros puedes ubicarnos en los siguientes enlaces:
+									</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope">datagovernance<br>@bposgromero.onmicrosoft.com</li>
+										<li class="icon solid fa-phone">(+51) 999 999 999</li>
+                                        <li class="icon solid fa-eye">
+                                            <span>Número de visitas:</span>
+                                             <span id="numVisita">39</span>
+                                        </li>
+									</ul>
+									<p>
+										<br>
+											<p>
+								</section>
+							<!-- Footer -->
+						</div>
+					</div>
+			</div>
+    <!-- Scripts-->
+	<script src="{{ url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='assets/js/browser.min.js')}}"></script>
+	<script src="{{ url_for('static',filename='assets/js/breakpoints.min.js')}}"></script>
+	<script src="{{ url_for('static',filename='assets/js/util.js')}}"></script>
+	<script src="{{ url_for('static',filename='assets/js/main.js')}}"></script>
+
+</body>
+</html>
